@@ -13,7 +13,7 @@ const
   mozjpeg = require('imagemin-mozjpeg');
   ejs = require("gulp-ejs");
   rename = require("gulp-rename"); //拡張子を変更
-  uglify = require('gulp-uglify')
+  uglify = require('gulp-uglify');
   pug = require('gulp-pug');
 
 const
@@ -83,7 +83,7 @@ return gulp
 "overridebrowserslist": ["last 2 versions", "ie >= 11", "Android >= 4"],
 cascade: false}
 ) ]) )
-.pipe( postcss([ cssdeclsort({ order: 'alphabetically' }) ]) )//プロパティをソートし直す(アルファベット順)
+.pipe( postcss([ cssdeclsort({ order: 'alphabetical' }) ]) )//プロパティをソートし直す(アルファベット順)
 .pipe(gulp.dest(paths.dest.css));//コンパイル後の出力先
 });
 
@@ -114,7 +114,7 @@ imagemin.gifsicle({
   optimizationLevel: 1,
   colors: 256
 }),
-imagemin.jpegtran(),
+imagemin.mozjpeg(),
 imagemin.optipng(),
 imagemin.svgo()
 ];
