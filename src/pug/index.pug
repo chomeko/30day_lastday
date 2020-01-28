@@ -9,5 +9,65 @@ html(lang="ja")
     meta(name="keywords" content="デイトラ, コーディング, HTML")
     link(rel="stylesheet", href="css/reset.css")
     link(rel="stylesheet", href="css/style.css")
+    link(href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css")
+    //link(rel="stylesheet" href="css/animate.css")
   body
-    h1.item hello!!
+    header.header
+      .header__inner
+        h1.header__logo
+          a(href="#")
+            img.header__logo__img(src="../img/logo@2x.png", alt="ロゴ画像" href="#")
+        .header__warapper
+          .header__warapper--block
+          nav.header__nav
+            ul.header__nav__list
+              li.header__nav__list--item
+                a(href="") News
+              li.header__nav__list--item
+                a(href="") Service
+              li.header__nav__list--item
+                a(href="") Results
+              li.header__nav__list--item
+                a(href="") FAQs
+              li.header__nav__list--item
+                a(href="") Price
+              li.header__nav__list--item
+                a(href="") Comments
+              li.header__nav__list--item
+                a(href="") Contact
+    main
+      section.top
+        .top__inner
+          .top__container
+            .top__warapper
+              h2.top__warapper__title 詩が生れて、画が出来る。<br>とかくに人の世は住みにくい。
+              p.top__warapper__lead どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+              a.btn(href="") お問い合わせしてみる
+          <!-- .inner -->
+
+      section.news
+        .news__container
+          .news__inner
+            h2.news__title News
+            nav.news__nav
+              ul.news__nav__menu
+                li.news__nav__list
+                  .news__nav__list--day 2019-02-01
+                  span.news__nav__list--label テキスト
+                  a.news__nav__list--text(href="") ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース
+                li.news__nav__list
+                  .news__nav__list--day 2019-02-01
+                  span.news__nav__list--label テキスト
+                  a.news__nav__list--text(href="") ニュースニュースニュースニュースニュースニュースニュース
+                li.news__nav__list
+                  .news__nav__list--day 2019-02-01
+                  span.news__nav__list--label テキスト
+                  a.news__nav__list--text(href="") ニュースニュースニュースニュースニュースニュースニュース
+            a.button MORE
+          <!-- .inner -->
+    <!-- script置き場 -->
+    script(src="https://code.jquery.com/jquery-2.2.3.min.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js")

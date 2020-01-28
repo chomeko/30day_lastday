@@ -1,0 +1,82 @@
+/* top */
+.top
+  background-image: url(/img/mv@2x.png)
+  max-width: 100%
+  background-size: cover//画像指定には必須
+  background-position: 24% center//ここもセットで必須
+  padding-top: 6.8rem//header分下げてる
+  height: auto
+  @include mq('pc')
+    max-width: 1366px
+    margin: auto
+  &__inner
+    @include inner(343px)
+    @include mq('tab')
+      @include inner(1180px)
+    @include mq('pc')
+      @include inner(1180px)
+  &__container
+    @include mq('tab')
+      display: flex
+      justify-content: flex-end
+    @include mq('pc')
+      display: flex
+      justify-content: flex-end
+  &__warapper
+    height: auto
+    min-height: 59.9rem
+    padding-top: 13.3rem
+    padding: 0 .35rem
+    @include mq('tab')
+      padding-top: 14rem
+      height: 26.4rem
+      width: 52.4rem
+    @include mq('pc')
+      padding-top: 14rem
+      height: 26.4rem
+      width: 52.4rem
+    &__title
+      font-size: 2.4rem
+      line-height: 1.8
+      margin-bottom: 40px
+      @include mq('tab')
+        font-size: 3rem
+        line-height: 1.5
+      @include mq('pc')
+        font-size: 3rem
+        line-height: 1.5
+    &__lead
+      font-size: 1.6rem
+      letter-spacing: 0.4px
+      line-height: 1.6
+      margin-bottom: 40px
+      @include mq('tab')
+        font-size: 1.8rem
+        letter-spacing: 0.45px
+        line-height: 1.4
+      @include mq('pc')
+        font-size: 1.8rem
+        letter-spacing: 0.45px
+        line-height: 1.4
+.btn
+  width: 23.2rem
+  height: 5rem
+  background: $yellow
+  border-radius: 10px
+  font-size: 1.8rem
+  letter-spacing: 0.45px
+  color: $whit
+  display: flex
+  align-items: center
+  justify-content: center
+  font-weight: bold
+  box-shadow: 0px 3px 5px #3E3E3E33
+  margin: auto
+  @include mq('tab')
+    width: 28rem
+    height: 5.1rem
+    margin: 0
+  @include mq('pc')
+    width: 28rem
+    height: 5.1rem
+    margin: 0

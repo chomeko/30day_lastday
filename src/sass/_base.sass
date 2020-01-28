@@ -9,8 +9,12 @@ $red: #FF4646
 $font: "YuGothic", "Yu Gothic","游ゴシック", "游ゴシック体", sans-serif
 $font_en: 'Montserrat', sans-serif
 
+@mixin inner($inner)
+  max-width: $inner
+  margin: auto
+
 $layout-width-inner: 1180px
-$breakpoints: ("sp": "screen and (max-width: 767px)","tab": "screen and (max-width: #{$layout-width-inner - 1px})","pc": "screen and (min-width: #{$layout-width-inner})")
+$breakpoints: ("sp": "screen and (max-width: 767px)","tab": "screen and (min-width: 768px) and (max-width: #{$layout-width-inner - 1px})","pc": "screen and (min-width: #{$layout-width-inner})")
 // メディアクエリー
 =mq($breakpoint: sp)
   @media #{map-get($breakpoints, $breakpoint)}
