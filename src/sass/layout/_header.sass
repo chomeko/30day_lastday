@@ -7,11 +7,7 @@
   &__inner
     background: $gree
     height: 6.8rem
-    @include mq('tab')
-      @include inner(1366px)
-      background-color: rgba($gree,0.1)
-    @include mq('pc')
-      @include inner(1366px)
+    @include mq('+sp')
       background-color: rgba($gree,0.1)
   &__logo
     width: 20rem
@@ -25,7 +21,6 @@
       display: inline-block
     &__img
       width: 100%
-
   &__warapper
     display: none
     position: fixed
