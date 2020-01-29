@@ -1,22 +1,21 @@
 /* header */
 .header
   width: 100%
-  height: 6.8rem
+  height: auto
   color: $gree
   position: fixed
-  background: $gree
-  @include mq('tab')
-    background-color: rgba($gree,0.1)
-  @include mq('pc')
-    background-color: rgba($gree,0.1)
   &__inner
+    background: $gree
+    height: 6.8rem
     @include mq('tab')
-      @include inner(627px)
+      @include inner(1366px)
+      background-color: rgba($gree,0.1)
     @include mq('pc')
-      @include inner(1180px)
+      @include inner(1366px)
+      background-color: rgba($gree,0.1)
   &__logo
     width: 20rem
-    padding-left: 1.6rem
+    margin-left: 1.6rem
     @include mq('tab')
       display: none
     @include mq('pc')
