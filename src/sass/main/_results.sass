@@ -70,6 +70,19 @@
   .swiper-pagination
     position: static
     margin-top: 2.4rem
+  .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
+    margin: 0 10px
+  .swiper-pagination-bullet
+    width: 1.2rem
+    height: 1.2rem
+    margin-left: 2rem
+    background: $whit
+    padding: .1rem
+    &-active /* ページネーションの二重丸*/
+      border: 3px solid $black
+      width: 1.6rem
+      height: 1.6rem
+      box-shadow: 0 0 0 1px $whit
   &--button
     background: inherit
     color: $whit
@@ -77,6 +90,8 @@
     height: 100%
     display: flex
     justify-content: center
+    &:hover
+      opacity: 1
     &--text
       font-family: $font-en
       display: flex
@@ -91,3 +106,7 @@
       margin-top: 4rem
       margin-bottom: 4rem
       border: 1px solid #FFFFFF
+      &:hover
+        opacity: 1
+        background: $whit
+        color: $black
