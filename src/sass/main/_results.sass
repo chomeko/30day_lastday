@@ -2,6 +2,18 @@
 .results
   background: $black
   padding-top: 4rem
+  @include mq('+sp')
+    background: $gree
+    padding-top: 8rem
+  &__container
+    position: relative
+    margin-left: auto
+    margin-right: auto
+    @include mq('+sp')
+      padding-left: 11rem
+      background: $black
+      max-width: 1273px
+      margin-left: 9rem
   &__title
     text-align: center
     color: $whit
@@ -10,12 +22,26 @@
     line-height: 1.2
     color: $whit
     margin-bottom: 4rem
+    @include mq('+sp')
+      text-align: left
+      font-size: 3.6rem
+      line-height: 1.2
+      margin-bottom: 8rem
+  .swiper-wrapper
+    padding-left: 1.6rem
+    @include mq('+sp')
+      padding-left: 0
   .swiper-container
     width: 100%
-    height: auto
+    height: 100%
+    @include mq('tab')
+      max-width: 1180px
   .swiper-slide
-    width: 27.6rem
-    margin-right: 1.6rem
+    min-width: 27.6rem
+    height: auto
+    color: $black
+    @include mq('+sp')
+      width: 42.2rem !important
     &--img
       max-width: 100%
       height: auto
@@ -25,12 +51,22 @@
       font-size: 1.5rem
       line-height: 0.8
       letter-spacing: .01rem
+      width: 100%
+      @include mq('+sp')
+        font-size: 2.0rem
+        padding: 2rem
+        line-height: 1.2
     &--lead
       background: $whit
       font-size: 1.2rem
       line-height: 1.6
       letter-spacing: .01rem
       padding: 0 1.2rem 1.2rem 1.2rem
+      width: 100%
+      @include mq('+sp')
+        font-size: 1.6rem
+        line-height: 1.5
+        padding: 0 2.0rem 2.0rem 2.0rem
   .swiper-pagination
     position: static
     margin-top: 2.4rem
