@@ -1,0 +1,62 @@
+.price
+  width: 100%
+  padding-top: 4rem
+  padding-left: 1.6rem
+  padding-right: 1.6rem
+  padding-bottom: 12rem
+  width: 100%
+  background: $gree
+
+  &__container
+    min-width: 34.3rem
+    //max-width: 960px
+    margin: auto
+    height: auto
+    @include mq('+sp')
+      max-width: 96rem
+
+  &__wrapper
+    width: 100%
+
+  &__title
+    font-family: $font-en
+    font-weight: bold
+    line-height: 1.23
+    font-size: 3rem
+    text-align: center
+    margin-bottom: 4.0rem
+
+  &__table
+    width: 100%
+    margin: auto
+    border: 1px solid $boder
+    border-collapse: collapse
+  &__text
+    font-size: 12px
+    line-height: 1.67
+    color: $boder
+    margin-top: 1.4rem
+/* tableのthとtd*/
+th, td
+  border: 1px solid $boder
+
+th
+  width: 7rem
+  background: $black
+  color: $whit
+  font-size: 2rem
+  line-height: 1.2
+  font-family: $font-en
+  height: 6rem
+  width: 10rem
+
+td
+  width: 23.4rem
+  padding: 1rem
+  font-size: 2rem
+  background: $whit
+  color: $black
+  font-weight: bold
+  font-family: $font-en
+  @include mq('+sp')
+    padding-left: 4rem
