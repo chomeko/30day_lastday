@@ -75,8 +75,11 @@
         transform: translate(2%, -50%)
         color: $qu-span
         font-size: x-large
+        @include mq('+sp')
+          right: -1%
+          transform: translate(1%, -50%)
       &-right.open
-        //質問のspanのー
+        //質問のspanのー,jsにてクラスの付け外しで切り替え
         position: absolute
         content: ''
         top: 50%

@@ -5,13 +5,13 @@ $('.question__list-item').click(function() {
     $answer.removeClass('open');
     // slideUpメソッドで$answerを隠す
     $answer.slideUp();
-    // 子要素のspanタグの中身をtextメソッドで書き換え
+    // 子要素のspanタグにopenクラスがなければつける、plusクラスもつける
     $(this).find(".question__list-item-right").toggleClass('open').addClass('plus');
   } else {
     $answer.addClass('open');
     // slideDownメソッドで$answerを表示
     $answer.slideDown();
-    // 子要素のspanタグの中身をtextメソッド書き換え
+    // 子要素のspanタグにopenクラスがあれば外す、plusクラスも外す
     $(this).find(".question__list-item-right").toggleClass('open').removeClass('plus');
   }
 });
