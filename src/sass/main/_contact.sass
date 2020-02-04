@@ -1,0 +1,201 @@
+/* contact */
+.contact
+  width: 100%
+  height: 100%
+  background-image: url(/img/alex-blajan-159378-unsplash@2x.png)
+  background-size: cover
+  background-position: center
+  flex-wrap: no-wrap
+  &__container
+    @include inner(960px)
+  &__wrapper
+    //contact本体
+    padding: 4rem 1.6rem
+  &__head
+    padding: 3.2rem 1.6rem 3.6rem 1.6rem
+    background: $black
+    border-radius: 12px 12px 0px 0px
+    width: 100%
+    max-width: 96rem
+    height: 160px
+    @include mq('+sp')
+      background: url('/img/contact1@2x.png')
+      background-size: contain
+      background-repeat: no-repeat
+      height: 20rem
+    &__title
+      font-size: 3rem
+      font-weight: bold
+      line-height: 1.07
+      font-family: $font-en
+      color: $whit
+      margin-bottom: 1rem
+      text-align: center
+    &__lead
+      font-size: 1.4rem
+      line-height: 1.86
+      color: $whit
+  &__form
+    background: $whit
+    padding: 4rem 1.6rem
+    border-radius: 0 0 1.2rem 1.2rem
+    &__content
+      /* 各form */
+      &__select
+        position: relative
+        /* selectの右端の矢印 */
+        &::after
+          content: ''
+          width: .8rem
+          height: .8rem
+          border: 0px
+          border-bottom: solid 2px $black
+          border-right: solid 2px $black
+          -ms-transform: rotate(45deg)
+          -webkit-transform: rotate(45deg)
+          transform: rotate(45deg)
+          position: absolute
+          bottom: 20%
+          right: 1rem
+        select
+          @include contact_content
+          border-radius: 0 0 0 0
+          margin-bottom: 4.1rem
+          @include form_select_hover
+      &__name
+        .requied
+          @include contact_requied
+        input
+          @include contact_content
+          border: none
+          border-bottom: 1px solid $boder
+          @include form_input_hover
+      &__kana
+        .requied
+          @include contact_requied
+        input
+          @include contact_content
+          border: none
+          border-bottom: 1px solid $boder
+          @include form_input_hover
+      &__mail
+        input
+          @include contact_content
+          border: none
+          border-bottom: 1px solid $boder
+          @include form_input_hover
+      &__razio
+        /* 本来のradioボタンを隠す*/
+        .radio
+          display: none
+        .radio + span
+          cursor: pointer
+          display: inline-block
+          position: relative
+        /* radioボタンの装飾*/
+        .radio + span::before
+          -webkit-transform: translateY(-50%)
+          background: #fff
+          border: 1px solid $boder
+          border-radius: 50%
+          content: ""
+          display: block
+          height: 1.2rem
+          left: -2.6rem
+          position: absolute
+          top: 50%
+          transform: translateY(-50%)
+          width: 1.2rem
+        /* チェック後の丸*/
+        .radio + span::after
+          -webkit-transform: translateY(-50%)
+          background: $blue
+          border: 1px solid transparent
+          border-radius: 50%
+          content: ""
+          height: .6rem
+          left: -2.3rem
+          opacity: 0
+          padding: 2px
+          position: absolute
+          top: 50%
+          transform: translateY(-50%)
+          transition: all 0.3s ease 0s
+          width: .6rem
+        .radio:checked + span::after
+          opacity: 1
+        span
+          margin-left: 1.5rem
+      &__massege
+        textarea
+          margin-top: 1rem
+          width: 100%
+          min-height: 16rem
+          border: 1px solid $boder
+          @include form_select_hover
+      &__check
+        margin: 2rem 0
+        width: 100%
+        display: flex
+        align-items: center
+        //justify-content: center
+        /* テキスト部分*/
+        #privacy--text
+          cursor: pointer
+          display: inline-block
+          margin-left: 20px
+        /* 本来のcheck部分は隠す*/
+        .check
+          display: none
+        /* 装飾するcheckboxを作る*/
+        .label
+          width: 1.8rem
+          height: 1.8rem
+          border: 1px solid $boder
+          display: inline-block
+          position: relative
+          /* クリック後のチェックマーク*/
+          &::after
+            -webkit-transform: translateY(-50%) rotate(-45deg)
+            border-bottom: 2px solid #3F51B5
+            border-left: 2px solid #3F51B5
+            content: ""
+            display: block
+            height: .8rem
+            left: .1rem
+            margin-top: -0.1em
+            opacity: 0
+            position: absolute
+            top: 50%
+            transform: translateY(-50%) rotate(-45deg)
+            transition: all 0.3s ease 0s
+            width: 1.5rem
+        .check:checked + label::after
+          opacity: 1
+  &--botton
+    width: 12.1rem
+    height: 5rem
+    background: $yellow
+    border-radius: 10px
+    font-size: 1.8rem
+    letter-spacing: 0.45px
+    color: $whit
+    display: flex
+    align-items: center
+    justify-content: center
+    font-weight: bold
+    box-shadow: 0px 3px 5px #3E3E3E33
+    margin: auto
+    &:hover
+      background: #ff8c00
+      opacity: 1
+  /* razioの男性女性用のwrapper*/
+  &__razio--wrapper
+    @include contact_content
+    border: none
+    display: flex
+    justify-content: space-between
+    width: 21.3rem
+  /* contact__formの各label */
+  label
+    @include contact_font-size(1.6rem)

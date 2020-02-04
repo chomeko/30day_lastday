@@ -17,6 +17,45 @@ $font_en: 'Montserrat', sans-serif
   max-width: $inner
   margin: auto
 
+@mixin contact_font-size($font-size)
+  line-height: 1.41
+  font-size: $font-size
+
+@mixin contact_requied
+  background: $red
+  color: $whit
+  border-radius: 5px
+  width: 5rem
+  font-size: 1.4rem
+  text-align: center
+  display: inline-block
+  margin-left: 2rem
+
+
+@mixin contact_content
+  border: 1px solid $boder
+  display: block
+  width: 100%
+  padding-left: 1rem
+  margin-top: 1rem
+  margin-bottom: 4.0rem
+
+@mixin form_select_hover
+  &:hover
+    box-shadow: 0 0 3px $blue
+    border: 1px solid $blue
+  &:focus
+    box-shadow: 0 0 3px $blue
+    border: 1px solid $blue
+
+@mixin form_input_hover
+  &:hover
+    box-shadow:  0 3px 3px -3px $blue
+    border-bottom: 1px solid $blue
+  &:focus
+    box-shadow:  0 3px 3px -3px $blue
+    border-bottom: 1px solid $blue
+
 $layout-width-inner: 1180px
 /* sp: スマホ */
 /* +sp: スマホ以上でタブレットとpc共通 */
@@ -60,4 +99,7 @@ img
   margin: 0
   padding: 0
   vertical-align: bottom
+
+input, select, textarea
+  outline: none
 ​
