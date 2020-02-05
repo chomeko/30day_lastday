@@ -227,36 +227,41 @@ html(lang="ja")
                   option セレクトB
                   option セレクトC
               .contact__form__content__name
-                label(for="name") 氏名
-                span.requied 必須
+                .div
+                  label(for="name") 氏名
+                  span.requied 必須
                 input(id="name"  name="name" type="text" placeholder="氏名")
               .contact__form__content__kana
-                label(for="kana") フリガナ
-                span.requied 必須
+                .div
+                  label(for="kana") フリガナ
+                  span.requied 必須
                 input(id="kana"  name="kana" type="text" placeholder="フリガナ")
               .contact__form__content__mail
-                label(for="email") メールアドレス
+                .div
+                  label(for="email") メールアドレス
                 input(id="email" name="email" type="text" placeholder="text@example.com")
               .contact__form__content__razio
-                label 性別
-                  .contact__razio--wrapper
-                    .mens
-                      label
-                        input(class="radio" type="radio" name="radio-check")
-                        |
-                        span 男性
-                    .woman
-                      label
-                        input(class="radio" type="radio" name="radio-check")
-                        |
-                        span 女性
+                .div
+                  label 性別
+                .contact__razio--wrapper
+                  .mens
+                    label
+                      input(class="radio" type="radio" name="radio-check")
+                      |
+                      span 男性
+                  .woman
+                    label
+                      input(class="radio" type="radio" name="radio-check")
+                      |
+                      span 女性
               .contact__form__content__massege
                 label(for="massege") メッセージ
                 textarea(id="massege" name="massege")
               .contact__form__content__check
-                input(class="check" type="checkbox" name="check-name" id="check")
                 label(for="check" class="label")
-                span#privacy--text 個人情報保護方針に同意する
+                  input(class="check" type="checkbox" name="check-name" id="check")
+                  |
+                  span#privacy--text 個人情報保護方針に同意する
               a.contact--botton(href="#") 送信する
         <!-- .inner -->
     <!-- script置き場 -->
