@@ -11,6 +11,7 @@ html(lang="ja")
     link(rel="stylesheet", href="css/style.css")
     link(href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet")
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css")
+    link(rel="stylesheet" href="https://use.fontawesome.com/c821facd71.css" media="all")
     //link(rel="stylesheet" href="css/animate.css")
   body
     header.header
@@ -264,6 +265,26 @@ html(lang="ja")
                   |
                   span#privacy--text 個人情報保護方針に同意する
               a.contact--botton(href="#") 送信する
+        <!-- .inner -->
+    footer.footer
+        .footer__container
+          .footer__wrapper--left
+            .footer__icon
+              a.footer__icon--twitter(href="")
+                span(class="fa fa-twitter" title="Twitter" aria-hidden="true")
+              a.footer__icon--facebook(href="")
+                span(class="fa fa-facebook" title="Twitter" aria-hidden="true")
+            nav.footer__nav
+              ul.footer__nav__menu
+                li
+                  a.footer__nav--sitemap(href="#") サイトマップ
+                li
+                  a.footer__nav--personal(href="#") 個人情報保護方針
+                li
+                  a.footer__nav--privacy(href="#") プライバシーポリシー
+          .footer__wrapper--right
+            .footer--logo HANIWAMAN Corp.
+            .footer--copywriter © Haniwaman Landing page Sample.
         <!-- .inner -->
     <!-- script置き場 -->
     script(src="https://code.jquery.com/jquery-2.2.3.min.js")
