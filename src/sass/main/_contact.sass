@@ -58,25 +58,27 @@
       /* 各form */
       &__select
         align-items: center
-        position: relative
         @include mq('+sp')
           white-space: nowrap
           display: flex
           margin-bottom: 4rem
-        /* selectの右端の矢印 */
-        &::after
-          content: ''
-          width: .8rem
-          height: .8rem
-          border: 0px
-          border-bottom: solid 2px $black
-          border-right: solid 2px $black
-          -ms-transform: rotate(45deg)
-          -webkit-transform: rotate(45deg)
-          transform: rotate(45deg)
-          position: absolute
-          bottom: 20%
-          right: 1rem
+        .select-content
+          position: relative
+          /* selectの右端の矢印 */
+          &::after
+            content: ''
+            width: .8rem
+            height: .8rem
+            border: 0px
+            border-bottom: solid 2px $black
+            border-right: solid 2px $black
+            -ms-transform: rotate(45deg)
+            -webkit-transform: rotate(45deg)
+            transform: rotate(45deg)
+            position: absolute
+            right: 1rem
+            top: 30%
+            //transform: translateY(-50%)
         select
           @include contact_content
           height: 3.2rem
@@ -99,6 +101,9 @@
             height: 2.4rem
             margin-left: 9rem
             margin-top: 5px
+            display: flex
+            align-items: center
+            justify-content: center
         input
           @include contact_content
           border: none
@@ -118,6 +123,9 @@
             width: 5.5rem
             height: 2.4rem
             margin-top: 5px
+            display: flex
+            align-items: center
+            justify-content: center
         input
           @include contact_content
           border: none

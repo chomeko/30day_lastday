@@ -221,11 +221,12 @@ html(lang="ja")
             form.contact__form
               .contact__form__content__select
                 label(for="type") お問い合わせ種別
-                select(id="type" name="type")
-                  option(value="" hidden) 選択してください
-                  option セレクト１
-                  option セレクトB
-                  option セレクトC
+                .select-content
+                  select(id="type" name="type")
+                    option(value="" hidden) 選択してください
+                    option セレクト１
+                    option セレクトB
+                    option セレクトC
               .contact__form__content__name
                 .div
                   label(for="name") 氏名
