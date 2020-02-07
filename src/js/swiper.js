@@ -1,7 +1,7 @@
 $( function() {
-  var swiper = new Swiper('.swiper-container', {
+  var swiper = new Swiper('.swipper__container', {
       speed: 400,
-      autoplay:true,
+      //autoplay:true,
       loop: true,
       centeredSlides: true,
       slideToClickedSlide: true,
