@@ -13,9 +13,7 @@
   &__logo
     width: 20rem
     margin-left: 1.6rem
-    @include mq('tab')
-      display: none
-    @include mq('pc')
+    @include mq('+sp')
       display: none
     a
       height: 6.8rem
@@ -30,10 +28,7 @@
     width: 100%
     height: 100%
     overflow-x: hidden
-    @include mq('tab')
-      display: flex
-      height: 8.0rem
-    @include mq('pc')
+    @include mq('+sp')
       display: flex
       height: 8.0rem
   /* メニューの閉じるボタン*/
@@ -88,9 +83,7 @@
       background: linear-gradient(90deg,$black-op 0%,$black-op 75px,$whit 75px,$whit 100%)
     &.open
       transform: translateZ(0)
-    @include mq('tab')
-      display: flex
-    @include mq('pc')
+    @include mq('+sp')
       display: flex
     &__list
       text-align: center
@@ -100,12 +93,7 @@
       transform: translate(-50%, -49%)
       font-family: $font-en
       width: 9.9rem
-      @include mq('tab')
-        display: flex
-        width: 100%
-        align-items: center
-        justify-content: center
-      @include mq('pc')
+      @include mq('+sp')
         display: flex
         width: 100%
         align-items: center
@@ -115,22 +103,14 @@
         font-size: 18px
         letter-spacing: -0.45px
         margin-bottom: 2.0rem
-        @include mq('tab')
-          font-size: 1.6rem
-          height: auto
-          margin-bottom: 0
-          margin-right: 4rem
-          letter-spacing: -0.4px
-        @include mq('pc')
+        @include mq('+sp')
           font-size: 1.6rem
           height: auto
           margin-bottom: 0
           margin-right: 4rem
           letter-spacing: -0.4px
         &:last-child
-          @include mq('tab')
-            margin-right: 0
-          @include mq('pc')
+          @include mq('+sp')
             margin-right: 0
         a
           color: $black
