@@ -75,6 +75,7 @@
         font-size: 1.8rem
         line-height: 1.44
   &__wrapper--right
+    position: relative
     text-align: center
     padding-bottom: 9.2rem
     @include mq('+sp')
@@ -106,3 +107,31 @@
       @include mq('+sp')
         margin: 0
         width: 100%
+  /* ページトップにスクロール*/
+  #PageTopBtn
+    cursor: pointer
+    display: inline-block
+    position: fixed
+    bottom: 16px
+    right: 16px
+    width: 50px
+    height: 50px
+    background: $gree
+    border: 1px solid $black
+    z-index: 1
+    @include mq('+sp')
+      right: 9.3rem
+      bottom: 3.8rem
+    .PageTopBtn--top
+      background-color: $black
+      display: inline-block
+      height: 4px
+      left: 0
+      position: absolute
+      width: 16px
+      &:nth-of-type(1)
+        top: 50%
+        transform: translateX(22px) rotate(45deg)
+      &:nth-of-type(2)
+        top: 50%
+        transform: translateX(13px) rotate(-45deg)
