@@ -17,8 +17,3 @@ $(function () {
     return false;
   });
 });
-/* header__navのリンクに下線*/
-$('.header__nav li a').click(function () {
-  $('.header__nav li a').removeClass('link-current');
-  $(this).addClass('link-current');
-});
