@@ -3,9 +3,12 @@
   padding-top: 4rem
   padding-left: 1.6rem
   padding-right: 1.6rem
-  padding-bottom: 28.1rem
+  padding-bottom: 15rem
   width: 100%
   background: $gree
+  @include mq('+sp')
+    padding-top: 8rem
+    padding-bottom: 28.1rem
 
   &__container
     margin: auto
@@ -23,6 +26,8 @@
     font-size: 3rem
     text-align: center
     margin-bottom: 4.0rem
+    @include mq('+sp')
+      margin-bottom: 8rem
 
   &__table
     width: 100%
@@ -34,6 +39,8 @@
     line-height: 1.67
     color: $boder
     margin-top: 1.4rem
+    @include mq('+sp')
+      margin-top: 2.4rem
 /* tableのthとtd*/
 th, td
   border: 1px solid $boder
