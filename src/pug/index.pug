@@ -27,19 +27,19 @@ html(lang="ja")
           nav.header__nav
             ul.header__nav__list
               li.header__nav__list--item
-                a(href="") News
+                a(href="#news") News
               li.header__nav__list--item
-                a(href="") Service
+                a(href="#service") Service
               li.header__nav__list--item
-                a(href="") Results
+                a(href="#results") Results
               li.header__nav__list--item
-                a(href="") FAQs
+                a(href="#faqs") FAQs
               li.header__nav__list--item
-                a(href="") Price
+                a(href="#price") Price
               li.header__nav__list--item
-                a(href="") Comments
+                a(href="#comments") Comments
               li.header__nav__list--item
-                a(href="") Contact
+                a(href="#contact") Contact
     main
       section.top
         .top__inner
@@ -50,7 +50,7 @@ html(lang="ja")
               a.btn(href="") お問い合わせしてみる
         <!-- .inner -->
 
-      section.news
+      section.news#news
         .news__container
           .news__title
             h2.news__title--text News
@@ -75,7 +75,7 @@ html(lang="ja")
               .news--button--text MORE
         <!-- .inner -->
 
-      section.service
+      section.service#service
         h2.service__title Service
         .service__warapper
           ul.service__card
@@ -93,7 +93,7 @@ html(lang="ja")
               p.service__card--text どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
         <!-- .inner -->
 
-      section.results
+      section.results#results
         .results__container
           h2.results__title Results
           .swiper__container
@@ -126,7 +126,7 @@ html(lang="ja")
           a.results--button(href="")
             .results--button--text VIEW ALL
           <!-- .inner -->
-      section.price
+      section.price#price
         .price__container
           .price__wrapper
             table.price__table
@@ -148,7 +148,7 @@ html(lang="ja")
                   | prise ￥10,000
             p.price__text
               | ※ 上記料金はサンプルです。
-      section.comments
+      section.comments#comments
         .comments__container
           .comments__wrapper
             h2.comments__title
@@ -166,7 +166,7 @@ html(lang="ja")
           .comments__secondary
         <!-- .inner -->
 
-      section.question <!-- 背景 -->
+      section.question#faqs <!-- 背景 -->
         .question__container <!-- 上下余白調整-->
           .question__wrapper <!-- カルーセル本体サイズ指定-->
             h2.question__title Q&A
@@ -216,7 +216,7 @@ html(lang="ja")
           a.access--bntton(href="https://www.google.com/maps?ll=35.168383,136.884775&z=13&t=m&hl=ja&gl=JP&mapclient=embed&cid=10807240924188616402")
             .access--bntton--text Google Maps
         <!-- .inner -->
-      section.contact
+      section.contact#contact
         .contact__container
           .contact__wrapper
             .contact__head
@@ -304,3 +304,4 @@ html(lang="ja")
     script(src="/js/carousel.min.js")
     script(src="/js/drower.min.js")
     script(src="/js/top-btn.min.js")
+    script(src="/js/sumusu.min.js")
