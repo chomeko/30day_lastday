@@ -17,14 +17,37 @@
       padding: 8rem 0
   &__head
     padding: 3.2rem 1.6rem 3.6rem 1.6rem
-    background: $black
+    background-image: url("/img/kaitlyn-baker-vZJdYl5JVXY-unsplash.jpg")
+    background-position: center
+    background-size: cover
+    box-shadow: 0px 3px 6px #00000029
     border-radius: 12px 12px 0px 0px
     width: 100%
     max-width: 96rem
     height: 160px
+    position: relative
     @include mq('+sp')
       padding: 6.15rem 0
       height: 20rem
+    &::before
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      content: ' '
+      background: #000
+      opacity: 0.5
+      border-radius: 12px 12px 0px 0px
+    &__wrapper
+      min-width: 31.1rem
+      height: auto
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      @include mq('+sp')
+      width: 100%
     &__title
       font-size: 3rem
       font-weight: bold
